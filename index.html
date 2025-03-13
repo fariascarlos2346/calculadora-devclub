@@ -15,7 +15,7 @@
     <div>
         <input class="display">
         <button class="gray-button"onclick="limpaTela()"> AC </button>
-        <button class="gray-button" onclick="adicionarCaracter('+/-')"> +/- </button>
+        <button class="gray-button" onclick="inverterNumero()"> +/- </button>
         <button class="blue-button" onclick="adicionarCaracter('/')"> / </button>
         <button class="blue-button" onclick="adicionarCaracter('*')"> * </button>
         <button class="black-button" onclick="adicionarCaracter('7')"> 7 </button>
@@ -50,6 +50,12 @@
         const valorDisplay = document.querySelector(".display").value
 
         document.querySelector(".display").value = eval(valorDisplay)
+    }
+
+    function inverterNumero() {
+        const valorDisplay = document.querySelector(".display").value
+
+        document.querySelector(".display").value = valorDisplay * -1
     }
     
 
